@@ -7,7 +7,6 @@ exports.index = (req, res) => {
             {
                 model: Profile,
                 as: 'profiles',
-                
             }
         ]
     })
