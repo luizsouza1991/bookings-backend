@@ -1,7 +1,5 @@
 'use strict';
 
-const profile = require("./profile");
-
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     name: DataTypes.STRING,
@@ -13,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'users'
   });
   User.associate = function(models) {
-    User.belongsTo(models.Profile, { foreignKey: 'id', as: 'profiles'})
+    User.belongsTo(models.Profile, { foreignKey: 'profile_id', as: 'profiles'})
   };
   return User;
 };

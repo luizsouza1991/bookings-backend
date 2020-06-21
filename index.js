@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
   
 require('./app/routes/login.routes')(app)
 require('./app/routes/type.routes')(app)
+require('./app/routes/user.routes')(app)
 
 app.listen(3000, () => {
     console.log('Está funcionando');
