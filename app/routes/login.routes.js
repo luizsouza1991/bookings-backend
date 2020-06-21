@@ -1,4 +1,4 @@
-// const verifyAuth = require('./index');
+const verifyAuth = require('./index');
 
 module.exports = app => {
     const login = require('../controllers/login.controller');
